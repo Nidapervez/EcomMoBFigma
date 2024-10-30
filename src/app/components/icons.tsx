@@ -3,15 +3,15 @@ import React from 'react';
 const Icons = () => {
   return (
     <div>
-      <div id="firejet-html-app  ">
-        <div className="flex w-full flex-col  ">
+      <div id="firejet-html-app">
+        <div className="flex w-full flex-col">
           <div className="font-inter flex flex-grow flex-col justify-center gap-y-8 bg-neutral-50 px-40 py-20 font-medium">
-            <div className="flex flex-wrap flex-col items-center justify-between gap-x-4 gap-y-4 min-[1430px]:flex-nowrap">
+            <div className="flex flex-col items-center justify-between gap-x-4 gap-y-4 min-[1430px]:flex-nowrap">
               <div className="text-2xl leading-8 tracking-[0.16px] text-start mr-[800px]">
                 Browse By Category
               </div>
-              <section className="categories mt-10 mr-96">
-                <div className="flex flex-wrap gap-8 items-start text-base font-medium text-center text-black">
+              <section className="categories mt-10 mr-96 overflow-x-auto">
+                <div className="flex gap-8 items-start text-base font-medium text-center text-black whitespace-nowrap">
                   {[
                     {
                       imgSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/e076ef8a323d093df46d5c9091ba04329192bcbec15c5ea3a1bc04b9287923c4?placeholderIfAbsent=true&apiKey=63020574feac4f3895ec244f357db276",
@@ -44,7 +44,10 @@ const Icons = () => {
                       label: "Gaming",
                     },
                   ].map(({ imgSrc, alt, label }) => (
-                    <article key={label} className="flex flex-col grow shrink justify-center items-center px-8 py-6 w-32 whitespace-nowrap bg-gray-200 rounded-2xl min-h-[128px] min-w-[135px] max-md:px-5">
+                    <article
+                      key={label}
+                      className="flex flex-col grow shrink-0 justify-center items-center px-8 py-6 w-32 bg-gray-200 rounded-2xl min-h-[128px] min-w-[135px] max-md:px-5"
+                    >
                       <img
                         loading="lazy"
                         src={imgSrc}
