@@ -27,7 +27,7 @@ const Card = () => {
           <div className="text-left text-[gray]">Featured Products</div>
         </div>
       </div>
-      <div className="flex flex-grow flex-wrap justify-center gap-x-4 gap-y-4 leading-6 min-[1430px]:flex-nowrap mr-80">
+      <div className="flex flex-grow flex-wrap justify-center gap-x-4 gap-y-4 leading-6 min-[1430px]:flex-nowrap ">
         <div className="flex flex-col gap-y-4 text-center">
           <div className="flex flex-col items-center justify-center gap-y-4 rounded-[9px] bg-neutral-100 px-4 py-6 [max-width:268px]">
             <object
