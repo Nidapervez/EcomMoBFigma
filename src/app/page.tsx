@@ -43,7 +43,7 @@ export default function Home() {
               Apple <br /> AirPods <br/><span className="font-medium">Max</span>
             </h2>
             <p className="mt-2 text-sm font-medium leading-6 text-neutral-400">
-              Computational audio. Listen, it's powerful.
+              Computational audio. Listen, its powerful.
             </p>
           </header>
           <img
@@ -78,7 +78,7 @@ export default function Home() {
             Macbook<br/> <span className="font-medium">Air</span>
           </h2>
           <p className="mt-4 text-sm font-medium leading-6 text-neutral-400">
-            The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.
+            The new 15inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.
           </p>
         </div>
         <a
