@@ -1,14 +1,14 @@
-import React from 'react'
-import one from "@/Iphone 14 pro 1.png"
-import one2 from "@/Iphone 14 pro 1 (1).png"
-import one3 from "@/Iphone 14 pro 1 (2).png"
-import one4 from "@/Iphone 14 pro 1 (3).png"
-import one5 from "@/Iphone 14 pro 1 (4).png"
-import one6 from "@/Iphone 14 pro 1 (5).png"
-import one7 from "@/Iphone 14 pro 1 (6).png"
-import one8 from "@/Iphone 14 pro 1 (7).png"
+import React from 'react';
+import one from "@/Iphone 14 pro 1.png";
+import one2 from "@/Iphone 14 pro 1 (1).png";
+import one3 from "@/Iphone 14 pro 1 (2).png";
+import one4 from "@/Iphone 14 pro 1 (3).png";
+import one5 from "@/Iphone 14 pro 1 (4).png";
+import one6 from "@/Iphone 14 pro 1 (5).png";
+import one7 from "@/Iphone 14 pro 1 (6).png";
+import one8 from "@/Iphone 14 pro 1 (7).png";
 
-import Image from 'next/image'
+import Image from 'next/image';
 
 const Card = () => {
   return (
@@ -28,15 +28,18 @@ const Card = () => {
               <div className="text-left text-[gray]">Featured Products</div>
             </div>
           </div>
-          <div className="flex flex-wrap justify-center gap-x-4 gap-y-4 leading-6 overflow-y-auto max-h-[620px]">
+          <div className="grid grid-cols-4 gap-4">
             {[one, one2, one3, one4, one5, one6, one7, one8].map((imgSrc, index) => (
-              <div key={index} className="flex flex-col items-center justify-center gap-y-4 rounded-[9px] bg-neutral-100 px-4 py-6 w-[268px]">
-                <Image
-                  src={imgSrc}
-                  alt=""
-                  loading="lazy"
-                  className="h-40 w-40 object-cover"
-                />
+              <div key={index} className="flex flex-col items-center justify-center gap-y-4 rounded-[9px] bg-neutral-100 p-4">
+                <div className="relative w-full h-52"> {/* Increased height */}
+                  <Image
+                    src={imgSrc}
+                    alt={`Product ${index + 1}`}
+                    loading="lazy"
+                    layout="fill" // Fill the parent container
+                    objectFit="contain" // Ensure the image fits within the container
+                  />
+                </div>
                 <div className="text-center">
                   <p>Product {index + 1}</p>
                 </div>
@@ -48,7 +51,7 @@ const Card = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Card;
