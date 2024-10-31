@@ -95,7 +95,7 @@ export default function Home() {
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/43af78ad6da8882093f554b85e448e62e84d4e44043b785238da64c28e3137a6?placeholderIfAbsent=true&apiKey=63020574feac4f3895ec244f357db276"
           alt="MacBook Air 15-inch laptop"
-          className="object-contain mr-0 w-full rounded-none h-96 w-full aspect-[1.46] max-md:max-w-full h-96 ml-[300px]"
+          className="object-contain mr-0 w-full rounded-none h-96 w-full aspect-[1.46] max-md:max-w-full h-96 ml-[280px]"
         />
       </div>
     </article>
